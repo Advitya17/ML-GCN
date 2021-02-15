@@ -24,7 +24,7 @@ sudo chown $USER:orion-PG0 -R $HOME/code
 # cd workspace
 
 # sudo mkfs.ext4 /dev/sda3
-# sudo mount /dev/sda3 $HOME/workspace
+# sudo mount /dev/sda3 $HOME/workspace # or HDD with /dev/sdb1
 
 # # git clone https://github.com/Advitya17/ML-GCN
 # sudo chown $USER:orion-PG0 -R $HOME/workspace ###
