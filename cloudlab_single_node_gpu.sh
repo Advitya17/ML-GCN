@@ -13,8 +13,8 @@ cd $HOME
 mkdir workspace
 cd workspace
 
-sudo mkfs.ext4 /dev/sdb1
-sudo mount /dev/sdb1 $HOME/workspace # or HDD with /dev/sdb1
+sudo mkfs.ext4 /dev/sdb
+sudo mount /dev/sdb $HOME/workspace
 
 git clone https://github.com/Advitya17/ML-GCN
 sudo chown $USER:orion-PG0 -R $HOME/workspace ###
