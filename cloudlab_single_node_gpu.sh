@@ -17,6 +17,19 @@ sudo mount /dev/sda4 $HOME/code
 
 sudo chown $USER:orion-PG0 -R $HOME/code
 
+# ----
+# For mounting repo to a different workspace
+# cd $HOME
+# mkdir workspace
+# cd workspace
+
+# sudo mkfs.ext4 /dev/sda3
+# sudo mount /dev/sda3 $HOME/workspace
+
+# # git clone https://github.com/Advitya17/ML-GCN
+# sudo chown $USER:orion-PG0 -R $HOME/workspace ###
+# ----
+
 sudo apt-get update
 
 # build tools
