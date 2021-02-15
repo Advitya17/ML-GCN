@@ -8,6 +8,18 @@
 # 4. (Optional) add any other depdencies (e.g., python libs) to this script
 #############################################################################
 
+# For mounting repo to a different workspace
+cd $HOME
+mkdir workspace
+cd workspace
+
+sudo mkfs.ext4 /dev/sdb1
+sudo mount /dev/sdb1 $HOME/workspace # or HDD with /dev/sdb1
+
+git clone https://github.com/Advitya17/ML-GCN
+sudo chown $USER:orion-PG0 -R $HOME/workspace ###
+# --------------------------------------
+
 cd $HOME
 mkdir code
 cd code
@@ -17,18 +29,6 @@ sudo mount /dev/sda4 $HOME/code
 
 sudo chown $USER:orion-PG0 -R $HOME/code
 
-# ----
-# For mounting repo to a different workspace
-# cd $HOME
-# mkdir workspace
-# cd workspace
-
-# sudo mkfs.ext4 /dev/sda3
-# sudo mount /dev/sda3 $HOME/workspace # or HDD with /dev/sdb1
-
-# # git clone https://github.com/Advitya17/ML-GCN
-# sudo chown $USER:orion-PG0 -R $HOME/workspace ###
-# ----
 
 sudo apt-get update
 
