@@ -16,8 +16,8 @@ cd workspace
 sudo mkfs.ext4 /dev/sdb
 sudo mount /dev/sdb $HOME/workspace
 
-git clone https://github.com/Advitya17/ML-GCN
-sudo chown $USER:orion-PG0 -R $HOME/workspace ###
+sudo chown $USER:orion-PG0 -R $HOME/workspace
+git clone https://github.com/Advitya17/ML-GCN 
 # --------------------------------------
 
 cd $HOME
