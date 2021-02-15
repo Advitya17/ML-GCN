@@ -78,5 +78,6 @@ sudo python3 -m pip install pyarrow
 sudo python3 -m pip install pyspark==2.4
 sudo python3 -m pip install jupyter
 sudo python3 -m pip install scikit-learn
+# sudo python3 -m pip install torch==0.3.1 torchnet torchvision==0.2.0 tqdm
 
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
