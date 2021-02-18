@@ -78,8 +78,14 @@ sudo python3 -m pip install pyarrow
 sudo python3 -m pip install pyspark==2.4
 sudo python3 -m pip install jupyter
 sudo python3 -m pip install scikit-learn
+sudo python3 -m pip install psrecord
+
+# ML-GCN (+ MSDNet)
+sudo python3 -m pip install torch==0.3.1 torchvision==0.2.0 torchnet tqdm --quiet 
+# -----
+
 # sudo python3 -m pip install torch==0.3.1 torchnet torchvision==0.2.0 tqdm
-sudo python3 -m pip install torchnet tqdm torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html --quiet
+# sudo python3 -m pip install torchnet tqdm torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html --quiet
 
 
 sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 1
