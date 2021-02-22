@@ -56,6 +56,7 @@ def sample_metrics(unit="MB"):
         "time": str(datetime.datetime.utcnow()),
         "cpu": psutil.cpu_percent(interval=1),
         "mem": psutil.virtual_memory().used / weight,
+        "ram": psutil.virtual_memory().active / weight,
         "disk": psutil.disk_usage("/").used / weight,
         "disk_io": {
             "rc": disk_io_stat[0] - ini_rc,
@@ -87,7 +88,7 @@ def compute_metrics():
         lst.append(sample_metrics())
         time.sleep(1)
     df = pd.DataFrame(lst)
-    df.to_csv('demo_voc2007_gcn_metrics.csv', index=False)
+    df.to_csv('demo_voc2007_gcn_metrics_2.csv', index=False)
 
 def start():
     global t
