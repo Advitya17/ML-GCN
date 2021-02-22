@@ -79,6 +79,7 @@ sudo python3 -m pip install pyspark==2.4
 sudo python3 -m pip install jupyter
 sudo python3 -m pip install scikit-learn
 sudo python3 -m pip install psrecord
+sudo python3 -m pip install GPUtil
 
 # ML-GCN (+ MSDNet)
 sudo python3 -m pip install torch==0.3.1 torchvision==0.2.0 torchnet tqdm --quiet 
