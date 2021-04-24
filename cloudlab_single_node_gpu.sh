@@ -83,6 +83,7 @@ sudo python3 -m pip install psrecord
 sudo python3 -m pip install GPUtil
 sudo python3 -m pip install matplotlib
 sudo python3 -m pip install cython
+sudo python3 -m pip install scikit-image
 
 # ML-GCN (+ MSDNet)
 # sudo python3 -m pip install torch==0.3.1 torchvision==0.2.0 torchnet tqdm --quiet 
